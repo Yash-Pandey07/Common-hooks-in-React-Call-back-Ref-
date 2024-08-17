@@ -2,15 +2,6 @@
 
 This repository contains examples and explanations of two commonly used React hooks: `useCallback` and `useRef`. These hooks are essential for optimizing performance and managing references in React components.
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [useCallback](#usecallback)
-- [useRef](#useref)
-- [Usage](#usage)
-- [Examples](#examples)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -26,16 +17,17 @@ React hooks provide a powerful way to manage state, side effects, and other Reac
 const memoizedCallback = useCallback(() => {
   doSomething(a, b);
 }, [a, b]);
-
+```
 ### useRef
 useRef is a hook that returns a mutable ref object whose .current property is initialized to the passed argument. This object persists for the lifetime of the component. useRef is commonly used to access DOM elements directly or store mutable values that do not cause re-renders when updated.
 
 Example:
+```
 const inputEl = useRef(null);
 const focusInput = () => {
   inputEl.current.focus();
 };
-
+```
 ## Getting Started 
 1. Clone the repository:
 
